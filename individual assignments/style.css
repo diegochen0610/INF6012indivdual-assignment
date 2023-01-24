@@ -1,61 +1,85 @@
 @charset "utf-8";
 
-@media (min-width: 768px){
-	
+/* this is for the medium-size devices */
+@media (min-width: 768px) {
+
 	.style-nav ul li {
-    display: inline-block;
-    border-bottom-left-radius: 0px;
+		display: inline-block;
+		border-bottom-left-radius: 0px;
 	}
+
 	.style-logo {
 		text-align: center;
 	}
-	
+
 	.style-nav ul {
 		text-align: center;
 	}
-	
+
 	#main-menu {
-    display: none;
-  	}
-	
-  	#hamburger-menu {
-    display: none;
-  	}
+		display: none;
+	}
+
+	#hamburger-menu {
+		display: none;
+	}
+
+	.login {
+		float: left;
+		color: #fff;
+	}
+
+
 }
 
-@media (min-width: 1024px){
-	
+/* this is for the large-size devices */
+@media (min-width: 1024px) {
+
 	.style-logo {
 		float: left;
 	}
-	
+
 	.style-nav {
 		float: right;
 		border: medium;
 	}
+
 	.style-language-sel {
 		float: right;
 	}
-	
-	.style-title{
-    	float: left;
+
+	.style-title {
+		float: left;
 	}
+
 	#main-menu {
-    display: none;
-  	}
-	
-  	#hamburger-menu {
-    display: none;
-  	}
-	
+		display: none;
+	}
+
+	#hamburger-menu {
+		display: none;
+	}
+
+	.login {
+		float: left;
+		color: #fff;
+	}
+
 }
 
-@media (max-width: 768px){
+/* this is for the small-size devices */
+@media (max-width: 768px) {
 	.style-nav {
-		display:  none;;
+		display: none;
+		;
 	}
+
 	.style-logo {
-    	width: 100px;
+		width: 100px;
+	}
+
+	.login {
+		display: none;
 	}
 }
 
@@ -64,10 +88,11 @@ body {
 }
 
 header {
-    padding: 32px;
-    color: #000000;
-    font-style: inherit;
-	background-color: black;}
+	padding: 32px;
+	color: #000000;
+	font-style: inherit;
+	background-color: black;
+}
 
 main {
 	padding: 32px;
@@ -75,7 +100,7 @@ main {
 }
 
 #sidebar-menu h3 {
-  	text-align: center
+	text-align: center
 }
 
 #sidebar-menu ul li a {
@@ -90,11 +115,11 @@ main {
 }
 
 .style-logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 200px;
-    border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 200px;
+	border-radius: 50%;
 }
 
 .style-language-sel {
@@ -116,12 +141,12 @@ main {
 }
 
 .style-nav ul {
-	list-style-type: none;	
+	list-style-type: none;
 }
 
 .style-nav ul li a {
 	text-decoration: none;
-	color:#fff;
+	color: #fff;
 	text-align: center;
 	display: block;
 	text-transform: uppercase;
@@ -129,21 +154,21 @@ main {
 }
 
 .style-nav ul li a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    background: black;
-    z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .35s, visibility .35s, height .35s;
+	overflow: hidden;
+	background: black;
+	z-index: -1;
 }
 
 #main-menu {
@@ -151,7 +176,7 @@ main {
 	height: 100px;
 	width: 100%;
 	background: #3D0E61;
-	margin: 0px;  
+	margin: 0px;
 	z-index: 9;
 }
 
@@ -168,8 +193,8 @@ main {
 }
 
 #main-menu li {
-  list-style-type: none;
-  font-size: 2rem;
+	list-style-type: none;
+	font-size: 2rem;
 }
 
 #main-menu a {
@@ -180,82 +205,79 @@ main {
 }
 
 #main-menu a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-#hamburger-input{
-  display: none;
+#hamburger-input {
+	display: none;
 }
 
 #hamburger-menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Cabin', Sans-serif;
-    background: linear-gradient(
-      to bottom, 
-      #3D0E61, #3D0E61 20%, 
-      transparent 20%, transparent 40%, 
-      #3D0E61 40%, #3D0E61 60%, 
-      transparent 60%, transparent 80%, 
-      #3D0E61 80%, #3D0E61 100%
-    );
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Cabin', Sans-serif;
+	background: linear-gradient(to bottom,
+			#3D0E61, #3D0E61 20%,
+			transparent 20%, transparent 40%,
+			#3D0E61 40%, #3D0E61 60%,
+			transparent 60%, transparent 80%,
+			#3D0E61 80%, #3D0E61 100%);
 }
 
 #hamburger-menu #sidebar-menu {
-    visibilty: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100%;
-    background-color: #3D0E61;
-    transition: 0.3s;
-    padding: 0px 10px;
-    box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 200px;
+	height: 100%;
+	background-color: #3D0E61;
+	transition: 0.3s;
+	padding: 0px 10px;
+	box-sizing: border-box;
 }
 
 #hamburger-menu h3 {
-  color: #B9FAF8;
-  font-size: 2.2rem;
+	color: #B9FAF8;
+	font-size: 2.2rem;
 }
 
 #hamburger-menu ul {
-  padding-left: 0px;
+	padding-left: 0px;
 }
 
 #hamburger-menu ul li {
-  list-style-type: none;
-  line-height: 3rem;
+	list-style-type: none;
+	line-height: 3rem;
 }
 
 #hamburger-menu ul li a {
-  color: #B9FAF8;
-  font-size: 1.3rem;
-  text-decoration: none;
+	color: #B9FAF8;
+	font-size: 1.3rem;
+	text-decoration: none;
 }
 
 #hamburger-menu a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-    visibility: visible;
-    left: 0;
+#hamburger-input:checked+#hamburger-menu #sidebar-menu {
+	visibility: visible;
+	left: 0;
 }
 
-#hamburger-input:checked ~ .overlay{
-   	visibility: visible;
-  	opacity: 0.4;
+#hamburger-input:checked~.overlay {
+	visibility: visible;
+	opacity: 0.4;
 }
 
 #ads-photos img {
-    width: 100%;
+	width: 100%;
 }
 
 #quick-link {
@@ -274,21 +296,20 @@ main {
 	list-style-type: none;
 }
 
- #guest{
-    background-color: cornflowerblue;
-    color: white;
-    border: thick;
-    border-radius: 50px;
+#guest {
+	background-color: cornflowerblue;
+	color: white;
+	border: thick;
+	border-radius: 50px;
 }
 
 #quick-link li a:hover {
-    box-shadow: 2px 2px rgba(235,141,222,1.00);
+	box-shadow: 2px 2px rgba(235, 141, 222, 1.00);
 }
 
- #seller{
-    background-color: #3D0E61;
-    color: white;
-    border: thick;
-    border-radius: 50px;
+#seller {
+	background-color: #3D0E61;
+	color: white;
+	border: thick;
+	border-radius: 50px;
 }
-  

@@ -1,0 +1,53 @@
+.left {
+    width: 30%;
+    float: left;
+
+}
+
+.left div {
+    background-color: rgb(44, 4, 81);
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    height: 400px;
+}
+
+
+.middle div {
+    background-color: blueviolet;
+    padding: 8px;
+    margin-top: 7px;
+    margin-right: 15px;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    height: 400px;
+}
+
+.middle {
+    width: 30%;
+    float: left;
+
+}
+
+.right {
+    width: 38%;
+    float: right;
+    height: 400px;
+
+}
+
+
+@media only screen and (max-width: 620px) {
+
+    /* For mobile phones: */
+    .left,
+    .middle,
+    .right {
+        width: 100%;
+    }
+}

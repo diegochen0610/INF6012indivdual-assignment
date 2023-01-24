@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* This applies to medium-sized devices. */
+@media (min-width: 768px) {
+
+    .style-nav ul li {
+        display: inline-block;
+        border-bottom-left-radius: 0px;
+    }
+
+    .style-logo {
+        text-align: center;
+    }
+
+    .style-nav ul {
+        text-align: center;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    .login {
+        float: left;
+        color: #fff;
+    }
+
+}
+
+/* This applies to large-sized devices.*/
+@media (min-width: 1024px) {
+
+    .style-logo {
+        float: left;
+    }
+
+    .style-nav {
+        float: right;
+        border: medium;
+    }
+
+    .style-language-sel {
+        float: right;
+    }
+
+    .style-title {
+        float: left;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    .login {
+        float: left;
+        color: #fff;
+    }
+
+}
+
+/* This applies to small-sized devices. */
+@media (max-width: 768px) {
+    .style-nav {
+        display: none;
+        ;
+    }
+
+    .style-logo {
+        width: 100px;
+    }
+
+    .login {
+        display: none;
+    }
+}
+
+/* style sheet for body tag */
+body {
+    font-family: 'Cabin', Sans-serif;
+}
+
+/* style sheet for header tag */
+header {
+    padding: 32px;
+    color: #000000;
+    font-style: inherit;
+    background-color: black;
+}
+
+/* style sheet for main tag */
+main {
+    padding: 32px;
+    color: #000000;
+}
+
+/* style sheet for id = "sidebar-menu" and h3 sub tag */
+#sidebar-menu h3 {
+    text-align: center
+}
+
+/* style sheet for id = "sidebar-menu" and ul -> li -> a sub tag */
+#sidebar-menu ul li a {
+    text-decoration: none;
+    color: #2F322A;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 1.3rem;
+
+}
+
+/* style sheet for class = "style-log" */
+.style-logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* style sheet for class = "tyle-language-sel" */
+.style-language-sel {
+    float: right;
+    background-color: #3D0E61;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    outline: auto;
+}
+
+/* style sheet for class = "style-nav" */
+.style-nav {
+    background: #3D0E61;
+    padding-right: 2px;
+}
+
+/* style sheet for class = "style-nav" and ul sub tag */
+.style-nav ul {
+    list-style-type: none;
+}
