@@ -1,2 +1,2 @@
-# INF6012indivdual-assignment
-INF6012indivdual-assignment
+# Website Design RWD
+Redesign a old website to a RWD website
